@@ -1,21 +1,12 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
     <!DOCTYPE html>
     <html lang="en">
         <head>
             <meta charset="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
             <meta name="description" content="TigerMeet website" />
-            <meta name="author" content="Maisha Iqbal, Zoe Bingham, Kara K" />
+            <meta name="author" content="Maisha Iqbal, Zoe Bingham, Kara Kolodinsky" />
             <meta name="google-signin-client_id" content="731346261575-7o35nblj1if739bb1o0td9ma7qgfdlvb.apps.googleusercontent.com">
-            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <script src="https://accounts.google.com/gsi/client" async defer></script>
             <title>TigerMeet</title>
             <!-- Favicon-->
             <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -34,9 +25,22 @@
                 <div class="container px-4 px-lg-5 text-center bg-primary">
                     <h1 class="mb-1" >TigerMeet</h1>
                     <h3 class="mb-5"><em>meet other tigers!</em></h3>
+                    <div id="g_id_onload"
+                        data-client_id="731346261575-o9cj67si24e7rvoj390v4k7kpkqnohsl.apps.googleusercontent.com"
+                        data-context="signup"
+                        data-ux_mode="popup"
+                        data-login_uri="http://tigermeet.tech/"
+                        data-auto_prompt="false">
+                    </div>
 
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-shape="rectangular"
+                        data-theme="filled_black"
+                        data-text="signup_with"
+                        data-size="large"
+                        data-logo_alignment="left">
+                    </div>
                 </div>
             </header>
             <!-- About-->
