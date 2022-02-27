@@ -15,7 +15,7 @@ To run the build, follow the steps below:
 
 Diagrams
 Database EER Diagram:
-![db diagram](https://github.com/zmb6893/TigerMeet/db.png)
+![db diagram](https://github.com/zmb6893/TigerMeet/blob/main/db.png)
 
 UML Class Diagram:
-![class diagram](https://github.com/zmb6893/TigerMeet/uml.png)
+![class diagram](https://github.com/zmb6893/TigerMeet/blob/main/uml.png)
