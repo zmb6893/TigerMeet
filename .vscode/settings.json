@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/zoebingham/json-20211205.jar",
+        "/Users/zoebingham/ibatis-core-3.0.jar",
+        "/Users/zoebingham/jar_files_JDBC/**/*.jar"
+    ]
+}
