@@ -18,22 +18,23 @@ public class InitializeTables {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
         
             //Getting the connection
-            String mysqlUrl = "jdbc:mysql://localhost/4200";
-            Connection con = DriverManager.getConnection(mysqlUrl, "s", "Q");
+            String mysqlUrl = "jdbc:mysql://localhost/5432";
+            Connection con = DriverManager.getConnection(mysqlUrl, "postgres", "a");
             System.out.println("Connection established......");
 
             //Initialize the script runner
             ScriptRunner sr = new ScriptRunner(con);
 
+            /*
             //Creating a reader object
             Reader reader;
             try {
-                reader = new BufferedReader(new FileReader("E:\\sampleScript.sql"));
+                reader = new BufferedReader(new FileReader("Questions.sql"));
                 //Running the script
                 sr.runScript(reader);
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
-            }
+            }*/
 
         } catch (SQLException e) {
             e.printStackTrace();
