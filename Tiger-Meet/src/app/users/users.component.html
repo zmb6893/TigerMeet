@@ -1,1 +1,24 @@
-<p>users works!</p>
+<h2>Users Online</h2>
+<ul class="users">
+  <li *ngFor="let user of users">
+    <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+      <span class="badge">{{user.id}}</span>
+      <span class="name">{{user.username}}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedUser">
+    <img src={{selectedUser.imagePath}} width="300px" height="300px"/>
+  <h2>{{selectedUser.username}} Details</h2>
+  <div><span>id: </span>{{selectedUser.id}}</div>
+  <div><span>Name: </span>{{selectedUser.name}}</div>
+  <div><span>birthday: </span>{{selectedUser.birthday}}</div>
+  <div><span>gender: </span>{{selectedUser.gender}}</div>
+  <div><span>clubs: </span>{{selectedUser.clubs}}</div>
+  <div><span>seeking: </span>{{selectedUser.seeking}}</div>
+  <div><span>deaf: </span>{{selectedUser.deaf}}</div>
+  <div><span>favorite eatery: </span>{{selectedUser.faveEatery}}</div>
+  <div><span>favorite study zone: </span>{{selectedUser.faveStudy}}</div>
+  <div><span>matches: </span>{{selectedUser.matches}}</div>
+  </div>
