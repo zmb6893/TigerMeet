@@ -25,7 +25,7 @@ INSERT INTO Questions (Question)
 INSERT INTO Answers (Question_ID, Answer)
     VALUES
         (1, "Nonbinary"),
-        (1, "Female"),
+        (1, "Female"), 
         (1, "Male"),
         (1, "Other"),
         (2, "Yes"),
