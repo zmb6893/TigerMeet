@@ -7,7 +7,7 @@
       "type": "pwa-chrome",
       "request": "launch",
       "preLaunchTask": "npm: start",
-      "url": "http://tigermeet.tech/"
+      "url": "localhost:4020"
     },
     {
       "name": "ng test",
